@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web layout</title>
+	<!-- Main CSS link -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Section Starts -->
+	<header class="header-section template clear">
+		<h1>Web Layout</h1>
+	</header>
+    <!-- Header Section Ends -->
+
+    <!-- Navigation Section Starts -->
+    <section class="nav-section template clear">
+    	<ul>
+    		<li><a href="index.html">Homepage</a></li>
+    		<li><a href="google_map.html">Google Map</a></li>
+            <li><a href="youtube.html">YouTube</a></li>
+            <li><a href="website.html">Website</a></li>
+            <li><a id="active" href="table.html">Table</a></li>
+    	</ul>
+    </section>
+    <!-- Navigation Section Ends -->
+
+    
+    <!-- Content Section Starts -->
+    <section class="wrapper template clear">
+    	<div class="blog">
+            <div class="box">
+                <h2>Using colspan :</h2>
+                <table cellpadding="10" cellspacing="0" border="1" class="table-col">
+                    <tr>
+                        <th align="center" colspan="4">Student Information</th>
+                    </tr>
+                    <tr>
+                        <th>Id no.</th>
+                        <th>Name</th>
+                        <th>CGPA</th>
+                        <th>Department</th>
+                    </tr>
+                    <tr>
+                        <td>1326</td>
+                        <td>Sheikh Jubaer</td>
+                        <td>3.90</td>
+                        <td>CSE</td>
+                    </tr>
+                    <tr>
+                        <td>1327</td>
+                        <td>Ashek Kamal</td>
+                        <td>3.80</td>
+                        <td>CSE</td>
+                    </tr>
+                    <tr>
+                        <td>1328</td>
+                        <td>Sam Smith</td>
+                        <td>3.25</td>
+                        <td>EEE</td>
+                    </tr>
+                    <tr>
+                        <td>1320</td>
+                        <td>Sheikh Rayhan</td>
+                        <td>3.00</td>
+                        <td>EEE</td>
+                    </tr>
+                    <tr>
+                        <td>1321</td>
+                        <td>Jack Reacher</td>
+                        <td>3.95</td>
+                        <td>CSE</td>
+                    </tr>
+                    <tr>
+                        <td>1323</td>
+                        <td>Christine Ruse</td>
+                        <td>3.75</td>
+                        <td>CSE</td>
+                    </tr>
+                </table>
+
+                <p><span style="color: #fff; font-weight: bold;"><u>Explanation:</u></span> Here is the very first row, we have only one data which is Student information. As its a single data which requires only one coloumn. but that affect the beauty of the table. So we have used colspan = "3"; which means we have taken extra 3 coloumns for data (Student information).</p>
+            </div>
+
+             <div class="box">
+                <h2>Using rowspan :</h2>
+                <table cellpadding="10" cellspacing="0" border="1" class="table-col">
+                    <tr>
+                        <th align="center" colspan="4">Student Information</th>
+                    </tr>
+                    <tr>
+                        <th>Id no.</th>
+                        <th>Name</th>
+                        <th>CGPA</th>
+                        <th>Department</th>
+                    </tr>
+                    <tr>
+                        <td>1326</td>
+                        <td>Sheikh Jubaer</td>
+                        <td>3.90</td>
+                        <td rowspan="2">CSE</td>
+                    </tr>
+                    <tr>
+                        <td>1327</td>
+                        <td>Ashek Kamal</td>
+                        <td>3.80</td>
+                        <!-- <td>CSE</td> -->
+                    </tr>
+                    <tr>
+                        <td>1328</td>
+                        <td>Sam Smith</td>
+                        <td>3.25</td>
+                        <td>EEE</td>
+                    </tr>
+                    <tr>
+                        <td>1320</td>
+                        <td>Sheikh Rayhan</td>
+                        <td>3.00</td>
+                        <td>EEE</td>
+                    </tr>
+                    <tr>
+                        <td>1321</td>
+                        <td>Jack Reacher</td>
+                        <td>3.95</td>
+                        <td>CSE</td>
+                    </tr>
+                    <tr>
+                        <td>1323</td>
+                        <td>Christine Ruse</td>
+                        <td>3.75</td>
+                        <td>CSE</td>
+                    </tr>
+                </table>
+                <p><span style="color: #fff; font-weight: bold;"><u>Explanation:</u></span> Here in first two row, we can see the department name is similar (CSE). So we have removed the table data of department name of Id no. 1327. Then we have applied rowspan in department name of Id no. 1326. Here the data (CSE) is single and the next row is empty. So we gave rowspan="2"; which means the department name CSE covered 2 rows for single data (CSE). </p>
+            </div>
+
+    	</div>
+    	<div class="sidebar template clear">
+    		<div class="box">
+    			<h2>Sidebar one :</h2>
+    			<p>Lorem ipsum dolor  amet.</p>
+    			<p>Lorem ipsum dolor  amet.</p>
+    			<p>Lorem ipsum dolor  amet.</p>
+    			<p>Lorem ipsum dolor  amet.</p>
+    			<p>Lorem ipsum dolor  amet.</p>
+    		</div>
+
+    		<div class="box">
+    			<h2>Sidebar one :</h2>
+    			<p>Lorem ipsum dolor  amet.</p>
+    			<p>Lorem ipsum dolor  amet.</p>
+    			<p>Lorem ipsum dolor  amet.</p>
+    			<p>Lorem ipsum dolor  amet.</p>
+    			<p>Lorem ipsum dolor  amet.</p>
+    		</div>
+
+    		<div class="box">
+    			<h2>Sidebar one :</h2>
+    			<p>Lorem ipsum dolor  amet.</p>
+    			<p>Lorem ipsum dolor  amet.</p>
+    			<p>Lorem ipsum dolor  amet.</p>
+    			<p>Lorem ipsum dolor  amet.</p>
+    			<p>Lorem ipsum dolor  amet.</p>
+    		</div>
+    	</div>
+    </section>
+    <!-- Content Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <footer class="footer-section template clear">
+    	<p>&copy; Copyright by Sheikh Jubaer, 2020.</p>
+    </footer>
+    <!-- Footer Section Ends -->
+
+
+
+</body>
+</html>
